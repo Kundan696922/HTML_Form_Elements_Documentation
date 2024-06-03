@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>HTML Form Elements Documentation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.o"/>
+    <meta charset="utf-8">
+    <link href="styles.css" rel="stylesheet"></link>
+  </head>
+  <html>
+    <nav id="navbar">
+      <header class="header1">HTML Form Elements Documentation</header>
+          <ul>
+            <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+            <li><a class="nav-link" href="#Form_Elements">Form Elements</a></li>
+            <li><a href="#Form_Attributes"class="nav-link">Form Attributes</a></li>
+            <li><a class="nav-link" href="#Input_Types_and_Attributes">Input Types and Attributes</a></li>
+            <li><a class="nav-link" href="#Form_Validation">Form Validation</a></li>
+          </ul> 
+    </nav>
+    <main id="main-doc">
+      <section class="main-section" id="Introduction">
+        <header>Introduction</header>
+        <article>
+          <p>HTML forms are used to collect user input. They contain various form elements such as text fields, checkboxes, radio buttons, and submit buttons. The collected data can be sent to a server for processing.</p>
+        </article>
+      </section>
+      <section class="main-section" id="Form_Elements">
+        <header>Form Elements</header>
+        <article>
+          <ul>
+          <li><p class="ul-header">Input
+          <p>The <span class="italic">&ltinput&gt</span> element is one of the most commonly used form elements. It can be used for various types of input fields, such as text, password, email, and more, by setting the type attribute.</p>
+          </p>
+            <code> &lt;input type="text" placeholder="Enter your name"&gt;</code>
+          </li>
+          <li>
+            <p class="ul-header">Select</p>
+            <p>The <span class="italic">&ltselect&gt</span> element creates a drop-down list. It contains multiple <span class="italic">&ltoption&gt</span> elements, each representing an item in the list. Users can select one or multiple options from the list. For example:</p>
+            <code> 
+              &lt;select&gt;<br>
+              &ensp;&lt;option value="volvo"&gt;Volvo&lt/option&gt;<br>
+              &ensp;&lt;option value="saab"&gt;Saab&lt;/option&gt;<br>
+              &ensp;&lt;option value="mercedes"&gt;Mercedes&lt;/option&gt;<br>
+              &ensp;&lt;option value="audi"&gt;Audi&lt;/option&gt;<br>
+              &lt;/select&gt;
+          </code>
+          </li>
+          <li>
+            <p class="ul-header">Textarea</p>
+            <p>The <span class="italic">&lt;textarea&gt;</span> element provides a multi-line text input field. It is commonly used for collecting longer pieces of text, such as comments or descriptions.</p>
+            <code>
+              &lt;textarea rows="4" cols="50" placeholder="Enter your message"&gt;&lt;/textarea&gt;
+
+            </code>
+          </li>
+          <li>
+            <p class="ul-header">Button</p>
+            <p>The <span class="italic">&lt;button&gt;</span> element defines a clickable button. It can be used to submit forms, reset forms, or trigger other actions. Buttons can contain text, images, or other content.For example:</p>
+            <code>
+              &lt;button type="submit"&gt;Submit&lt;/button&gt;
+            </code>
+          </li>
+          </ul>
+        </article>
+      </section>
+      <section  class="main-section"id="Form_Attributes">
+        <header>Form Attributes</header>
+        <article>
+          <ul>
+            <li>
+              <p class="ul-header">Action</p>
+              <p>The <span class="italic">action</span> attribute specifies the URL where the form data will be sent for processing. It is a required attribute for form submission.</p>
+              <code>
+                &lt;form action="/submit-form.php" method="post"&gt;
+              </code>
+            </li>
+            <li>
+              <p class="ul-header">Method</p>
+              <p>The <span class="italic">method</span> attribute specifies how the form data should be sent to the server. Common values are <span class="italic">GET</span> and <span class="italic">POST</span>. <span class="italic">GET</span> appends form data to the URL, while <span class="italic">POST</span> sends it as a part of the request body.For example:</p>
+              <code>
+                &lt;form method="post"&gt;
+              </code>
+            </li>
+            <li>
+              <p class="ul-header">Target</p>
+              <p>The <span class="italic">target</span> attribute specifies where to display the response after submitting the form. Common values are <span class="italic">_self (default)</span>, <span class="italic">_blank</span>, <span class="italic">_parent</span>, and <span class="italic">_top</span>.</p>
+              <code>
+                &lt;form target="_blank"&gt;
+              </code>
+            </li>
+            <li>
+              <p class="ul-header">Enctype</p>
+              <p>The <span class="italic">enctype</span> attribute specifies the encoding type of the form data when submitting it to the server. Common values are <span class="italic">application/x-www-form-urlencoded</span>, <span class="italic">multipart/form-data</span>, and <span class="italic">text/plain</span>. For example:</p>
+              <code>
+                &lt;form enctype="multipart/form-data"&gt;
+              </code>
+            </li>
+          </ul>
+        </article>
+      </section>
+      <section class="main-section" id="Input_Types_and_Attributes">
+        <header>Input Types and Attributes</header>
+        <ul>
+          <li>
+            <p class="ul-header">Text</p>
+            <p>The <span class="italic">type="text"</span> input field is used for single-line text input.</p>
+            <code>
+              &lt;textarea rows="4" cols="50" placeholder="Enter your message"&gt;&lt;/textarea&gt;
+              </code>
+          </li>
+          <li>
+            <p class="ul-header">Password</p>
+            <p>The <span class="italic">type="password"</span> input field hides the entered characters, making it suitable for sensitive information such as passwords.</p>
+            <code>
+              &lt;input type="password" name="password"&gt;
+            </code>
+          </li>
+          <li>
+            <p class="ul-header">Email</p>
+            <p>The <span class="italic">type="email" </span>input field is used for email addresses. It ensures that the entered value conforms to the email format.</p>
+            <code>
+              &lt;input type="email" name="email"&gt;
+            </code>
+          </li>
+          <li>
+            <p class="ul-header">Number</p>
+            <p>The <span class="italic">type="number" </span>input field is used for numeric input. It can have additional attributes like <span class="italic">min</span>, <span class="italic">max</span>, and <span class="italic">step</span>.</p>
+            <code>
+              &lt;input type="number" name="quantity" min="1" max="100" step="1"&gt;
+            </code>
+          </li>
+          <li>
+            <p class="ul-header">Date</p>
+            <p>The <span class="italic">type="date"</span> input field provides a date picker to select a date.</p>
+            <code>
+              &lt;input type="date" name="birthdate"&gt;
+            </code>
+          </li>
+          <li>
+            <p class="ul-header">Radio</p>
+            <p>The <span class="italic">type="radio"</span> input field is used to select one option from a group. Multiple radio buttons with the same <span class="italic">name</span> attribute form a group.</p>
+            <code>
+              &lt;input type="radio" name="gender" value="male"&gt; Male<br>
+              &lt;input type="radio" name="gender" value="female"&gt; Female
+            </code>
+          </li>
+          <li>
+            <p class="ul-header">Checkbox</p>
+            <p>The <span class="italic">type="checkbox"</span> input field allows users to select multiple options independently.For example:</p>
+            <code>
+              &lt;input type="checkbox" name="vehicle1" value="Bike"&gt; I have a bike&lt;br&gt;<br>
+              &lt;input type="checkbox" name="vehicle2" value="Car"&gt; I have a car&lt;br&gt;
+            </code>
+          </li>
+        </ul>
+      </section>
+      <section class="main-section" id="Form_Validation">
+        <header>Form Validation</header>
+          <article>
+            <ul>
+              <li>
+                <p class="ul-header">Required</p>
+                <p>The <span class="italic">required</span> attribute specifies that an input field must be filled out before submitting the form.</p>
+                <code>
+                  &lt;input type="text" name="username" required&gt;
+                </code>
+              </li>
+               <li>
+                <p class="ul-header">Pattern</p>
+                <p>The <span class="italic">pattern</span> attribute specifies a regular expression that the input field's value must match for the form to be submitted.</p>
+                <code>
+                  &lt;input type="text" name="username" pattern="[A-Za-z]{3,}" title="Three or more letters"&gt;
+                </code>
+              </li>
+               <li>
+                <p class="ul-header">Min and Max</p>
+                <p>The <span class="italic">min</span> and <span class="italic">max</span> attributes specify the minimum and maximum values for numeric and date input fields.For example:</p>
+                <code>
+                  &lt;input type="number" name="quantity" min="1" max="10"&gt;
+                </code>
+              </li>
+               <li>
+                <p class="ul-header">Step</p>
+                <p>The <span class="italic">step</span> attribute specifies the legal number intervals for numeric input fields. It is used to control the granularity of the value. For example, if <span class="italic">step="0.01"</span>, the input field will allow values with two decimal places.</p>
+                <code>
+                  &lt;input type="number" name="price" step="0.01"&gt;
+                </code>
+              </li>
+            </ul>
+          </article>
+      </section>
+    </main>
+  </html>
+</html>
