@@ -1,4 +1,4 @@
-# HTML Form Elements Documentation
+# Technical documentation page
 
 This project is a technical documentation page on HTML Form Elements, providing detailed information and examples on how to use various form elements in web development.
 
