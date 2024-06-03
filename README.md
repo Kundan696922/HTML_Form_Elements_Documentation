@@ -14,7 +14,7 @@ This project is a technical documentation page on HTML Form Elements, providing 
 ## Tools used
 
  - **Web Technologies**: ![HTML5](https://img.shields.io/badge/-HTML5-E34F26?style=flat&logo=html5&logoColor=white) ![CSS3](https://img.shields.io/badge/-CSS3-1572B6?style=flat&logo=css3&logoColor=white)
- - **Code Editor**: ![VS Code Icon](https://cdn.jsdelivr.net/gh/devicons/devicon/icons/visualstudio/visualstudio-plain.svg)
+ - **Code Editor**: ![VS Code](https://img.shields.io/badge/-VS_Code-007ACC?style=flat&logo=visual-studio-code&logoColor=white)
 
 ## Overview
 ![Screenshot 2024-06-03 105129](https://github.com/Kundan696922/HTML_Form_Elements_Documentation/assets/159406079/9016e52f-2282-46f9-a411-86b870a40920)
